@@ -1,0 +1,26 @@
+{
+  "name": "realwave-loader",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "lerna run start --parallel",
+    "bootstrap": "npm install && lerna bootstrap"
+  },
+  "author": "Marlon Maxwel",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^8.0.2",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.11.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.5.1",
+    "html-webpack-plugin": "^3.1.0",
+    "lerna": "^2.5.1",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  }
+}

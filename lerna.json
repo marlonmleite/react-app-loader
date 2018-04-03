@@ -1,0 +1,13 @@
+{
+  "lerna": "2.5.1",
+  "packages": [
+    "packages/*"
+  ],
+  "commands": {
+    "publish": {
+      "message": "chore(release): publish"
+    }
+  },
+  "version": "independent",
+  "npmClient": "yarn"
+}
