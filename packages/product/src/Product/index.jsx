@@ -3,16 +3,24 @@ import { Link } from 'react-router'
 import { connect } from 'react-redux'
 
 class Catalogs extends Component {
+  goTo(routeParams) {
+    const event = new CustomEvent('CHANGE_ROUTE', { detail: { routeParams } })
+
+    global.window.dispatchEvent(event)
+  }
+
   render() {
     const { onIncrement, counter } = this.props
 
     return (
       <div>
-        <div>
+        <div style={{ width: '100%', paddingBottom: 10 }}>
           Products, total: {counter}
           <button type="button" onClick={onIncrement}>+ Increment</button>
         </div>
-        <Link to="/catalog">Catalog</Link>
+        <div>
+          <button onClick={() => this.goTo('/catalog')}>Go To Catalog</button>
+        </div>
       </div>
     )
   }
